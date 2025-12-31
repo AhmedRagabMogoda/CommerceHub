@@ -23,6 +23,11 @@ The architecture follows **RESTful principles** and is production-ready with env
 
 ## 🛠 Tech Stack
 
+### Backend Framework
+- **Spring Boot** - Core framework
+- **Spring Security** - Authentication & authorization
+- **Spring Data JPA** - Data access layer
+
 ### Database & Persistence
 - **Microsoft SQL Server** - Primary database
 - **Flyway** - Database migration tool
@@ -38,12 +43,6 @@ The architecture follows **RESTful principles** and is production-ready with env
 - **Lombok** - Boilerplate code reduction
 - **Swagger/OpenAPI** - API documentation
 - **SLF4J + Logback** - Logging framework
-
-### Development & Testing
-- **Maven** - Build & dependency management
-- **JUnit 5** - Unit testing
-- **Mockito** - Mocking framework
-- **H2 Database** - In-memory testing database
 
 ---
 
@@ -160,5 +159,26 @@ CommerceHub-backend/
                     ├── V3__add_admin_account.sql   
                     ├── V4__add_admin_role.sql
                     └── V5__create_order_number_sequence.sql
+```
+
+### Backend Structure
+- ✅ All **Entities** with audit fields (`createdAt`, `updatedAt`, `createdBy`, `updatedBy`)  
+- ✅ All **Repositories** with custom queries using Spring Data JPA  
+- ✅ All **DTOs and Mappers** using MapStruct  
+- ✅ **Custom Exceptions and Global Exception Handler** for unified error handling  
+- ✅ Comprehensive **Utilities and Constants**  
+- ✅ Complete **Security System** with JWT Authentication & Authorization  
+- ✅ All **Services** with clear business logic  
+- ✅ All **REST Controllers** following RESTful principles and documented with Swagger
+
+
+
+### API & Documentation
+- **Swagger/OpenAPI Annotations** for automatic API documentation  
+- **ApiResponse wrapper** for consistent responses  
+- **Automatic validation** of request bodies  
+- **Pagination and sorting** support for list endpoints  
+- Detailed **logging** for each request  
+- Correct use of **HTTP status codes** for responses  
 
 
