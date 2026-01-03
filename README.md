@@ -18,6 +18,13 @@ This backend application is designed to support a modern e-commerce platform wit
 
 The architecture follows **RESTful principles** and is production-ready with environment-based configurations.
 
+## System Overview
+
+<img width="650" height="800" alt="image" src="https://github.com/user-attachments/assets/7ddc9039-fa3a-4184-806c-cda3ad00edca" />
+
+## Authentication Flow
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4b8732f8-77ea-4de7-937a-191a24bb4b10" />
+
 ---
 
 
@@ -160,6 +167,7 @@ CommerceHub-backend/
                     ├── V4__add_admin_role.sql
                     └── V5__create_order_number_sequence.sql
 ```
+---
 
 ### Backend Structure
 - ✅ All **Entities** with audit fields (`createdAt`, `updatedAt`, `createdBy`, `updatedBy`)  
@@ -171,7 +179,7 @@ CommerceHub-backend/
 - ✅ All **Services** with clear business logic  
 - ✅ All **REST Controllers** following RESTful principles and documented with Swagger
 
-
+---
 
 ### API & Documentation
 - **Swagger/OpenAPI Annotations** for automatic API documentation  
@@ -181,4 +189,5 @@ CommerceHub-backend/
 - Detailed **logging** for each request  
 - Correct use of **HTTP status codes** for responses  
 
+---
 
